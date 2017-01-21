@@ -1,0 +1,31 @@
+{% extends 'admin/model/create.html' %}
+
+{% block body %}
+    <div class="col-sm-6">
+    	{{ super() }}
+    </div>
+
+    <div class="col-sm-6 kartujo">
+        <div class="karto">
+            <p class="supra_top"></p>
+            <p class="supra"></p>
+            <p class="supra_sub"></p>
+            <img class="bildo" src="">
+            <p class="klarigo_ega_teksto"></p>
+            <p class="klarigo_eta_teksto"></p>
+            <p class="piedo_dekstra"></p>
+            <p class="piedo_maldekstra"></p>
+        </div>
+{% endblock %}
+
+{% block head %}
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='munchkin/card.css') }}">
+{% endblock %}
+
+{% block tail %}
+<script type="text/javascript">
+    $('.admin-form').on('keyup change', 'input, select, textarea', function(){
+    $( "p.supra" ).text($("textarea#supra").text());
+});
+</script>
+{% endblock %}

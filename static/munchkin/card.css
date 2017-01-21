@@ -1,0 +1,80 @@
+	page[size="A4"] {
+	  height: 21cm;
+	  width: 29.7cm;
+	  display: block;
+	  margin: 0 auto;
+	  margin-bottom: 0.5cm;
+	  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+	  padding: 1.35cm; 
+	}
+	@media print {
+	  body, page[size="A4"] {
+	    margin: 0;
+	    box-shadow: 0;
+	  }
+	}
+	p{
+		margin:0;
+	}
+
+	.kartujo {
+
+		margin:50px auto 0 auto;
+	}
+
+	.bildo{
+		display:block;
+		max-width:80%;
+		width:80%;
+		height:auto;
+		margin:0 auto 0 auto;
+		margin-top: 0.1cm;
+	}
+	.karto{
+		position: relative;
+		width: 5.4cm;
+		height: 8.5cm;
+		background-color: #fcce9a;
+		border: 0.3cm solid #300d0d;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		float: left;
+		margin-bottom: 1cm;
+		text-align: center;
+	}
+	.supra_sub{
+		font-size: 0.3cm;
+		margin-top: 0.05cm;
+	}
+	.piedo_maldekstra,.piedo_dekstra{
+		font-size: 0.4cm;
+		margin-top: 0.1cm;
+	}
+	.supra{
+		font-size: 0.5cm;
+		margin-top: 0.05cm;
+	}
+	.klarigo_eta_teksto{
+		text-align: justify;
+		margin: .2cm .2cm 0 .2cm;
+		font-size: .3cm;
+	}
+	.klarigo_ega_teksto{
+		margin-top: .1cm;
+		font-size: .5cm;
+	}
+	.piedo_dekstra{
+		position: absolute;
+		right: 0.1cm;
+		bottom: 0.05cm;
+		font-size: small;
+		font-style: bold;
+	}
+	.piedo_maldekstra{
+		position: absolute;
+		left: 0.1cm;
+		bottom: 0.05cm;
+		font-size: small;
+		font-style: bold;
+	}
