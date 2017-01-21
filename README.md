@@ -12,7 +12,7 @@ Ilo por memfari Munĉkinkartaro enrete per grupo. Estas tutfuŝe farite, ĉar mi
 Estas pli rapidaĉfarite ol uzemfarite por savaĝa reto ;)
 Konsideru ĝin uzi lokale eble, aû klopodu blibonigajn ŝanĝojn ;)  
 
-'''bash
+```bash
 mkvirtualenv munchkin && cd munchkin
 source bin/activate
 
@@ -21,6 +21,6 @@ cd mun-kin
 
 pip install -r requirements.txt
 
-python models.py && python tests/populate.py # ekkreas modeloj kaj 
+python models.py && python tests/populate.py # ekkreas DB kaj ekz. kartojn
 python app.py
-'''
+```
