@@ -1,6 +1,6 @@
 # Ekzemplo
 
-p4w5.eu/munchkin
+http://www.p4w5.eu/munchkin
 
 # Kio estas?
 
