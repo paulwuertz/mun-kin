@@ -8,7 +8,7 @@ from sqlalchemy.dialects.mysql import BIGINT
 from sqlalchemy.dialects.mysql import LONGTEXT
 from sqlalchemy.orm import sessionmaker, relationship, backref
 from flask_admin.contrib.sqla import filters
-from flask.ext.admin.form.upload import FileUploadField
+from flask_admin.form.upload import FileUploadField
 
 Base = declarative_base()
 

@@ -4,7 +4,6 @@ from flask_admin.contrib.sqla import ModelView
 from flask_sqlalchemy  import *
 from models import *
 import flask_admin as admin
-import flask_login as login
 from flask_admin.contrib import sqla
 from flask_admin import helpers, expose, form
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -70,6 +69,7 @@ app = Flask(__name__)
 admin = Admin(app, name='munĉkinilo', template_mode='bootstrap3')
 app.config['SECRET_KEY'] = '123456790'
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///visualalchemist.db"
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = True
 # Add administrative views here
 db = SQLAlchemy(app)
 
